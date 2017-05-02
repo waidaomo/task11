@@ -1,0 +1,66 @@
+html {
+  font-size: 62.5%; }
+
+header {
+  position: fixed;
+  padding: 0.6rem 1rem;
+  background: #5fc0cd;
+  height: 3rem;
+  line-height: 3rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  color: #fff; }
+  header a {
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff; }
+  header h3 {
+    text-align: center;
+    margin: 0 4rem;
+    font-size: 2rem; }
+
+.quit {
+  float: left; }
+
+.register, main .forget {
+  float: right; }
+
+main {
+  position: absolute;
+  background: #eff0f4;
+  top: 4.2rem;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  main .logintext {
+    margin-top: 1rem;
+    background: #fff; }
+    main .logintext input {
+      padding-left: 8rem;
+      border: none;
+      line-height: 4rem;
+      font-size: 1.5rem;
+      outline: none; }
+      main .logintext input[type="text"] {
+        background: url(iphone.png) no-repeat;
+        background-size: 5rem 4rem; }
+      main .logintext input[type="password"] {
+        background: url(locked.png) no-repeat;
+        background-size: 5rem 4rem; }
+  main .enter {
+    margin-top: 1rem;
+    width: 100%;
+    line-height: 4rem;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    cursor: pointer;
+    background: #5fc0cd;
+    color: #fff;
+    border: none;
+    text-align: center; }
+  main .forget {
+    padding: 0 1rem; }
+
+/*# sourceMappingURL=task11-1.css.map */

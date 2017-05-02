@@ -1,0 +1,81 @@
+html{
+	font-size: 62.5%;
+}
+$color:#fff;
+$cursor: pointer;
+$border: none;
+$background-size: 5rem 4rem;
+$text-align: center;
+@mixin left-right {
+	left: 0;
+	right: 0;
+}
+header{
+	position: fixed;
+	padding: 0.6rem 1rem;
+	background: #5fc0cd;
+	height: 3rem;
+	line-height: 3rem;
+	@include left-right;
+	top: 0;
+	color: $color;
+	a{
+	font-size: 1.5rem;
+	cursor: $cursor;
+	text-decoration: none;
+	color: $color;
+	}
+	h3{
+	text-align: $text-align;
+	margin:0 4rem;
+	font-size: 2rem;
+	}
+}
+.quit{
+	float: left;
+}
+.register{
+	float: right;
+}
+main{
+	position: absolute;
+	background: #eff0f4;
+	top: 4.2rem;
+	@include left-right;
+	bottom: 0;
+		.logintext{
+		margin-top: 1rem;
+		background: $color;
+			input{
+			padding-left: 8rem;
+			border: $border;
+			line-height: 4rem;
+			font-size: 1.5rem;
+			outline: none;
+			&[type="text"]{
+					background: url(iphone.png) no-repeat;
+					background-size: $background-size;
+				}
+			&[type="password"]{
+					background: url(locked.png) no-repeat;
+					background-size: $background-size;
+				}
+			}
+		}
+		.enter{
+			margin-top: 1rem;
+			width: 100%;
+			line-height: 4rem;
+			font-size: 2rem;
+			letter-spacing: 1rem;
+			cursor: $cursor;
+			background: #5fc0cd;
+			color: $color;
+			border: $border;
+			text-align: $text-align;
+		}
+		.forget{
+			@extend .register;
+			padding: 0 1rem;
+		}
+}
